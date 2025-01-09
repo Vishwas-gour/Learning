@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+
+    1. <input type="radio">
+    2. <input type="checkbox">
+    3. <select name="" id=""></select>
+    4. <textarea name="" id=""></textarea>
+
+    -->
+
+    <form  autocomplete="on" align="center"> <!-- autocomplete suggest previous input's -->
+
+        <!-- what is value :- to show value on search bar after summition -->
+        <ul type="none">
+             
+            <!-- input type = "radio" ==>" name " should be same if you want to select only one item -->
+            <li>Gender</li>
+            <li>
+                <label for="male">man</label>
+                <input type="radio"  id="male" name="gender" value="male" >
+            </li>
+            <li>
+                <label for="female">female</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </li>
+            <li>
+                <label for="other">other</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </li>
+        </ul>
+        
+        <!-- input type = "checkbox" ==> same as "radio" but, is used to select more than one item -->
+        <ul type="none">
+            <li>Select Subject</li>
+            <li>
+                <label for="hindi">Hindi</label>
+                  <!-- form tag "requared attribute"  :- tag is not empty/not checked -->
+                <input type="checkbox" id="hindi" name="Subject" value="hindi" >
+            </li>
+            <li>
+                <label for="english">English</label>
+                <input type="checkbox" id="english" name="Subject" value="english">
+            </li>
+            <li>
+                <label for="sanskrit">Sanskrit</label>
+                <input type="checkbox" id="sanskrit" name="Subject" value="sanskrit">
+            </li>
+        </ul>
+
+
+        <!-- <select>  is used to create a drop-down list, it contains many option as you want but select only one -->
+        <label for="tech" >Select Elective</label>
+        <select id="tech" size="3" >
+            <option  value="none"></option>
+            <option  value="webDevloper">webDevloper</option>
+            <option  value="appDeveloper">appDeveloper</option>
+            <option  value="yoga"> yoga</option>
+            <option  value="EVS">EVS</option>
+            <option  value="hindi">hindi</option>
+            <option  value="english">english</option>
+            <option  value="math">math</option>
+            <option  value="compuer">compuer</option>
+        </select><br>
+        <!-- textArea -->
+        <textarea name="" rows="6" cols="8" id=""></textarea>
+        <br>
+        <input type="submit" name="" id="login">
+    </form>
+</body>
+
+</html>

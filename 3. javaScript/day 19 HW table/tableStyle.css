@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#table {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#table table {
+    background: pink;
+    text-align: center;
+    width: 50%;
+    border: 1px solid rgb(43, 0, 86);
+
+}
+
+#table table td, th {
+    color: rgb(0, 0, 0);
+    background: rgb(130, 130, 130);
+    border: 1px solid rgb(11, 11, 11);
+}

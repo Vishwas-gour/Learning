@@ -1,0 +1,161 @@
+@mixin main{
+    
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    scrollbar-width: thin;
+    justify-content: center;
+    // border: 0.2px solid black;
+}
+
+img:hover {
+    scale: 1.02;
+    transition: all 0.07s;
+}
+a{
+    cursor: pointer;
+    color: black;
+}
+
+// <!-- <<<<<<< NAV-BAR <<<<<<<<<< -->
+nav {
+    ul {
+        padding: 1vw;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        background-color: rgb(55, 118, 233);
+
+        img {
+            height: 3vw;
+        }
+
+        @media (max-width:750px) {
+            img {
+                height: 7vw;
+            }
+        }
+
+        input {
+            background: #f2fcff;
+            border-radius: 5px;
+            padding: 1.2vw 2.5vw;
+            width: 40vw;
+            height: 45px;
+        }
+
+        @media (max-width:750px) {
+            input {
+                display: none;
+            }
+        }
+
+        li {
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+
+                label {
+                    cursor: pointer;
+                }
+
+                @media (max-width:750px) {
+                    label {
+                        height: 7vw;
+                    }
+                }
+            }
+
+            @media (max-width:750px) {
+                a {
+
+                    font-size: 3.4vw;
+                }
+            }
+        }
+
+    }
+}
+
+// <!-- <<<<<<< BEST-DEALS <<<<<<<<<< -->
+#best_deals_on_phones {
+    text-align: center;
+    .mobile_best_deals_label {
+        margin: 1vw;
+        font-size: 1.5vw;
+        color: rgb(116, 116, 116);
+    }
+
+    .item {
+        margin: 1vw;
+        font-size: 1.2vw;
+        color: rgb(116, 116, 116);
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-evenly;
+
+        li {
+            // border: 2px solid rgb(225, 220, 229);
+            margin: 2vw;
+
+            img {
+                height: 17vw;
+            }
+
+            .name {
+                margin: 0.2vw;
+                font-size: 1.2vw;
+            }
+
+            .price {
+
+                margin: 0.2vw;
+                font-size: 1.3vw;
+            }
+
+            .offer {
+                margin: 0.2vw;
+                color: rgb(17, 139, 66);
+                font-size: 1.2vw;
+            }
+        }
+    }
+
+    @media (max-width:900px) {
+        ul {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            li {
+                padding: 3vw;
+                margin: 1.6vw;
+                border: 2px solid rgb(225, 220, 229);
+
+                img {
+                    height: 45vw;
+                }
+
+                .name {
+                    font-size: 2.7vw;
+                }
+
+                .price {
+                    font-size: 2.5vw;
+                }
+
+                .offer {
+                    color: rgb(17, 139, 66);
+                    font-size: 2.6vw;
+                }
+            }
+        }
+
+    }
+}

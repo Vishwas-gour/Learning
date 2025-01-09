@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+UL {
+    list-style-type: none;
+}
+
+// <!-- <<<<<<< NAV-BAR <<<<<<<<<< -->
+nav {
+    ul {
+        padding: 1vw;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        background-color: rgb(55, 118, 233);
+
+        img {
+            height: 3vw;
+        }
+
+        @media (max-width:750px) {
+            img {
+                height: 7vw;
+            }
+        }
+
+        input {
+            background: #f2fcff;
+            border-radius: 5px;
+            padding: 1.2vw 2.5vw;
+            width: 40vw;
+            height: 45px;
+        }
+
+        @media (max-width:750px) {
+            input {
+                display: none;
+            }
+        }
+
+        li {
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+
+                label {
+                    cursor: pointer;
+                }
+
+                @media (max-width:750px) {
+                    label {
+                        height: 7vw;
+                    }
+                }
+            }
+
+            @media (max-width:750px) {
+                a {
+
+                    font-size: 3.4vw;
+                }
+            }
+        }
+
+    }
+}
+
+.box {
+    justify-content: center;
+    .loginPage {
+        margin: auto;
+        margin-top: 1vw;
+        width: 50vw;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+
+        .left {
+
+            padding: 2vw;
+            background-color: rgb(53, 111, 228);
+            color: antiquewhite;
+
+            .login {
+                font-size: 3vw;
+                margin-bottom: 2vw;
+            }
+
+            .get {
+                font-size: 2vw;
+                margin-bottom: 8vw;
+                // align-items: center;
+            }
+
+            .img img {
+                height: 16vw;
+            }
+        }
+        @media (max-width:900px) {
+            .left {
+                height: 40vw;
+                width: 40vw;
+                padding: 2vw;
+                background-color: rgb(53, 111, 228);
+                color: antiquewhite;
+    
+                .login {
+                    font-size: 3vw;
+                    margin-bottom: 2vw;
+                }
+    
+                .get {
+                    font-size: 2vw;
+                    margin-bottom: 8vw;
+                }
+                .img img{
+                    height: 23vw;
+                }
+    
+            }
+        }
+
+        .right {
+            form {
+                padding: 5vw 5vw 5vw 2vw;
+
+                .number {
+                    font-size: 1.1vw;
+                    width: 30vw;
+                    height: 2vw;
+                    
+                    margin-bottom: 0.6vw;
+                    text-align: center;
+
+                }
+
+                @media (max-width:900px) {
+
+                    .number {
+                        width: 40vw;
+                        height: 4vw;
+                        font-size: 2vw;
+                    }
+                }
+
+                label {
+                    font-size: 1.2vw;
+                }
+                @media (max-width:900px) {
+                    label {
+                        font-size: 2.2vw;
+                    }
+                }
+                .submit {
+                    margin-top: 0.5vw;
+                    height: 2.5vw;
+                    width: 30vw;
+                    font-weight: 600;
+                    background-color: #fb641b;
+                    font-size: 1.2vw;
+                    color: white;
+                }
+                @media (max-width:900px) {
+                    .submit {
+                        height: 4vw;
+                        width: 40vw;
+                        font-size: 1.7vw;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    @media (max-width:900px) {
+
+        .loginPage {
+            grid-template-columns: auto;
+        }
+    }
+}

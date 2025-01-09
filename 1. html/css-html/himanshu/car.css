@@ -1,0 +1,268 @@
+/* font-family */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+#hero1,
+#hero2,
+#hero3,
+#hero4,
+#hero6,
+#hero5 {
+    background-color: azure;
+    position: relative;
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+
+/* >>>>>>>>>>>>>>>>> HOVER <<<<<<<<<<<<<<<<<<<<< */
+
+img:hover {
+    scale: 1.02;
+    transition: scale 0.3s;
+}
+
+
+/* >>>>>>>>>>>>>>>>>> NAVBAR SECTION <<<<<<<<<<<<<<< */
+.nav1 {
+    height: 100vh;
+    text-align: center;
+    /* position: sticky; */
+    top: 0px;
+}
+
+.nav1 .vid video {
+    width: 98.9vw;
+}
+
+.nav1 .logo {
+    font-size: 3.7vw;
+    position: absolute;
+    top: 0.6vw;
+    left: 2vw;
+    color: rgb(255, 255, 255);
+}
+
+.nav1 .nav2 {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    right: 0px;
+    height: 10px;
+}
+
+.nav1 .nav2 ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+
+
+.nav1 .nav2 ul li {
+    margin-top: 2vw;
+    height: 200px;
+    width: 9vw;
+}
+
+.nav1 .nav2 ul li a {
+    font-size: 1.1vw;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav1 .nav2 ul li a:hover {
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+.nav1 .barlogo {
+    font-size: 1.32vw;
+}
+
+
+.nav1 .caption {
+    position: absolute;
+    top: 38vw;
+    left: 32vw;
+    font-size: 2.4vw;
+    color: rgb(255, 255, 255);
+}
+
+.nav1 .sub_caption {
+    position: absolute;
+    left: 32vw;
+    top: 40.8vw;
+    color: rgb(255, 207, 207);
+    font-size: 1.5vw;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>> HERO 1 SECTION <<<<<<<<<<<<<<<<<<<< */
+#hero1 {
+
+    height: 40vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#hero1 .article1 {
+    width: 30vw;
+    padding: 4vw;
+    align-content: center;
+    text-align: center;
+
+}
+
+#hero1 .article1 .p1 {
+    font-size: 3.2vw;
+    padding: 2vw 5vw;
+}
+
+#hero1 .article1 .p2 {
+    padding: 2vw 5vw;
+    font-size: 1.6vw;
+}
+
+#hero1 .article2 {
+    width: 30vw;
+    padding: 2vw 5vw;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5vw;
+
+}
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>> HERO2 <<<<<<<<<<<<<<<<<<<<<< */
+
+#hero3 {
+
+    height: 40vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+}
+
+#hero3 .content .d1 {
+    margin: 1vw;
+    font-size: 2.5vw;
+}
+
+#hero3 .content .d2 {
+    margin: 1vw;
+    font-size: 1.9vw;
+}
+
+#hero3 .content .d3 {
+    margin: 2vw 1vw;
+    font-size: 1vw;
+}
+
+#hero3 .content .d4 {
+    margin: 2vw;
+    font-size: 1vw;
+}
+
+#hero3 .content .d5 {
+    margin: 2vw;
+    font-size: 1.3vw;
+}
+
+#hero3 #hero3_img img {
+    position: relative;
+    top: -9vw;
+    height: 50vw;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>> HERO4 <<<<<<<<<<<<<<<<<<<<<< */
+#hero4 {
+    height: 40vw;
+    text-align: center;
+}
+
+#hero4 .d1 {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.6vw;
+}
+
+#hero4 .d2 {
+    background-color: rgb(255, 242, 242);
+    font-size: 4.4vw;
+}
+
+/*>>>>>>>>>>>>>>>>>>hero5<<<<<<<<<<<<<*/
+#hero5 .div  .dev {
+    margin: 3vw 3vw 7vw 3vw;
+    font-size: 2.5vw;
+    text-align: left;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>> HERO-6 <<<<<<<<<<<<<<<<<<<<<< */
+
+
+#hero6 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 52vw;
+    padding: 5vw 0px 0vw
+
+}
+
+
+#hero6 .img {
+    background-image: url(https://cars.mclaren.com/content/dam/mclaren-automotive/customer-racing/Current%20GT%20Models/720s-gt3x/720S%20GT3X%20PDP_Tile2_885x1050.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 80vw;
+    height: 50vw;
+}
+
+#hero6 .img .d1 {
+    padding: 0px 6vw;
+    position: relative;
+    top: 40vw;
+    margin: 0px 5vw;
+    font-size: 2.3vw;
+}
+
+
+#hero6 .content {
+    width: 80vw;
+    padding: 4vw;
+}
+
+#hero6 .content .d1 {
+    margin: 3vw 3vw 7vw 3vw;
+    font-size: 2.7vw;
+    text-align: left;
+}
+
+#hero6 .content .d2 {
+    margin: 3vw 3vw 7vw 3vw;
+    font-size: 1.3vw;
+    text-align: left;
+}
+
+.hero6 .content .d3 {
+    margin: 3vw 3vw 7vw 3vw;
+    font-size: 1.5vw;
+    text-align: left;
+}

@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    scrollbar-width: thin;
+    justify-content: center;
+    // border: 0.2px solid black;
+}
+
+img:hover {
+    scale: 1.02;
+    transition: all 0.07s;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+// <!-- <<<<<<< NAV-BAR <<<<<<<<<< -->
+nav {
+    ul {
+        text-decoration: none;
+        padding: 1vw;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        background-color: rgb(55, 118, 233);
+
+        img {
+            height: 2.4vw;
+        }
+
+        @media (max-width:750px) {
+            img {
+                height: 7vw;
+            }
+        }
+
+        input {
+            background: #f2fcff;
+            border-radius: 5px;
+            padding: 1.2vw 2.5vw;
+            width: 40vw;
+            height: 45px;
+        }
+
+        @media (max-width:750px) {
+            input {
+                display: none;
+            }
+        }
+
+        li {
+
+            a {
+                color: rgb(255, 255, 255);
+
+                label {
+                    cursor: pointer;
+                }
+
+                @media (max-width:750px) {
+                    label {
+                        height: 7vw;
+                    }
+                }
+            }
+
+            @media (max-width:750px) {
+                a {
+
+                    font-size: 3.4vw;
+                }
+            }
+        }
+
+    }
+}
+
+// <!-- <<<<<<< CART-ITEMS <<<<<<<<<< -->
+.cart_items {
+    align-items: center;
+
+    .section {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content:space-around;
+        border: 0.2px solid rgb(73, 73, 73);
+        padding: 1vw 8vw;
+
+        .left {
+            display: grid;
+            grid-template-columns: auto ;
+            // justify-content:last baseline;
+            align-items: center;
+            width: 19vw;
+
+            img {
+                height: 15vw;
+            }
+
+            input {
+                text-align: center;
+                font-size: 1.2vw;
+                height: 2vw;
+                width: 6vw;
+                border: 0.07vw solid black;
+                border-radius: 8px;
+            }
+        }
+
+        .center {
+            align-items: center;
+
+            .d1 {
+                font-size: 1.5vw;
+            }
+
+            .d2 {
+                font-size: 1.2vw;
+                color: rgb(110, 110, 110);
+            }
+
+            .d3 {
+                margin: 1vw 0px;
+                font-size: 1vw;
+                color: rgb(110, 110, 110);
+            }
+
+            .d4 {
+                margin: 1vw 0px;
+                font-size: 1.3vw;
+                color: rgb(18, 169, 15);
+            }
+
+            .d5 {
+                // margin-bottom: 4vw;
+                font-size: 1.1vw;
+            }
+
+            .d6 {
+                input {
+                    margin: 1vw 1vw 0vw 0px;
+                    font-size: 1vw;
+                    padding: 0.5vw;
+                    border-radius: 10px;
+
+                }
+
+            }
+        }
+
+        .right {
+            font-size: 1.3vw;
+
+            div {
+                margin: 1vw;
+            }
+        }
+
+
+
+    }
+
+    .price_details {
+        padding: 0px 15vw;
+
+        .price {
+            font-size: 2vw;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            margin: 0.3vw;
+
+            div {
+                font-size: 1.3vw;
+            }
+        }
+
+        .d2 {
+            .d2 {
+                color: #388E3C;
+            }
+        }
+
+        .d3 {
+            .d2 {
+                color: #388E3C;
+            }
+        }
+
+        .d4 {
+            .d2 {
+                color: #388E3C;
+            }
+        }
+
+
+        .d7 {
+            font-size: 1.5vw;
+            color: #388E3C;
+        }
+        .d6
+
+        .d8 {
+            font-size: 1.5vw;
+            font-weight: 700;
+            color: gray;
+        }
+    }
+
+}

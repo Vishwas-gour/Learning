@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+        
+
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+
+.nav {
+
+    background-color: rgb(173, 228, 232);
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    margin: 5px 0px 3px 0px;
+
+}
+
+.navUL {
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+
+}
+
+.navUL li a {
+    color: black;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+.img img {
+    margin-right: 220px;
+    height: 40px;
+}
+
+
+
+
+/* >>>>>>>>>>>>>>> hero <<<<<<<<<<<<<<<< */
+.hero {
+    background-image: url(https://t3.ftcdn.net/jpg/05/24/14/44/360_F_524144420_kAYcOWuld4q0ggrzc4ObD1CFMtr8ELk5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero .shadow {
+    position: absolute;
+    z-index: 1;
+    font-size: 70px;
+    top: 220px;
+    right: 590px;
+    color: rgb(139, 139, 139);
+    opacity: 0.5;
+    font-weight: 600;
+
+
+}
+
+.hero .best_education {
+    position: absolute;
+    z-index: 2;
+    font-size: 4vw;
+    top: 200px;
+    right: 560px;
+    font-weight: 600;
+}
+
+.hero .article1 .div1 {
+    font-size: 90px;
+    font-weight: bolder;
+    color: #332859;
+}
+
+.hero .article1 .div2 {
+    font-size: 20px;
+    color: #777777;
+    margin-left: 20px;
+}
+
+.hero .article1 .div3 {
+    margin-left: 300px;
+    margin-top: 10px;
+    background-color: #332859;
+    font-size: 17px;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 7px;
+    padding-top: 8px;
+}
+
+.hero .article2 img {
+    position: relative;
+    z-index: 2;
+
+}
+
+/* >>>>>>>>>>>>>>> best seller <<<<<<<<<<<<<<<< */
+
+.best_seller {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+    justify-content: space-evenly;
+}
+
+.best_seller article {
+    padding: 5px;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-shadow: 5px 5px 40px 10px rgb(172, 172, 172);
+    margin: 10px 0px;
+}
+
+.best_seller article .company {
+    font-size: 20px;
+    color: #3f3f3f;
+    font-weight: 100;
+}
+
+.best_seller article .material {
+    font-size: 20px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.best_seller article .mrp {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.best_seller article div img {
+    width: 170px;
+    height: 180px;
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<position>>>>>>>>>>>>>>>>>>>>>>>>>>> */ 
+#posi {
+    height: 45vw;
+    padding-top: 7vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#posi .art1 {
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 15vw;
+    padding-left: 10vw; */
+}
+
+#posi .art1 .new {
+    text-align: center;
+    box-shadow: 5px 2px 5px 3px;
+    top: 20px;
+    color: rgb(39, 39, 39);
+    font-size: 5vw;
+    font-weight: 700;
+
+}
+
+#posi .art2 {
+    align-items: center;
+    justify-content: center;
+}
+
+#posi .art2 img {
+    height: 40vw;
+}
+
+#posi .art2 .amount {
+    font-size: 2vw;
+    text-align: end;
+}
+
+#posi .art2 .amount del {
+    font-size: 2vw;
+    opacity: 0.5;
+}
+
+#posi .art2 .sale {
+    font-size: 20px;
+    text-align: end;
+}

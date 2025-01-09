@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table by js</title>
+</head>
+<body>
+    <button onclick="display()">Show data</button>
+    <h1 id="trial"></h1>
+    <script type="module">
+        import {name,age} from "./named.js";
+        console.log(name,age)
+        import display from "./default.js";
+        console.log(display());
+    </script>
+</body>
+</html>

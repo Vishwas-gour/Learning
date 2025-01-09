@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.port": 5502,
+    "liveServer.settings.multiRootWorkspaceName": "css html",
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}

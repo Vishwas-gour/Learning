@@ -1,0 +1,141 @@
+/* >>>>>>>>>>>>>>>>>>>>>> footer <<<<<<<<<<<<<<<<<<<<<< */
+footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: white;
+    border-top:1px solid white ;
+}
+
+footer .left {
+    background-color: rgb(1, 1, 1);
+    padding-bottom: 1vw;
+}
+
+footer .center {
+    background-color: rgb(1, 1, 1);
+    margin-top: 1px;
+}
+
+footer .right {
+    background-color: rgb(1, 1, 1);
+    margin-top: 1px;
+}
+
+footer .d1 {
+    font-size: 1.3vw;
+    margin: 2vw 0px;
+}
+
+footer .d2 {
+    padding: 0px 5vw;
+    font-size: 1.1vw;
+    margin: 2vw 3vw;
+}
+
+footer .left .facebook:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: rgb(37, 37, 248);
+}
+
+footer .left .twiter:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: rgb(0, 91, 111);
+}
+
+footer .left .pinterest:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: rgb(255, 64, 64);
+
+}
+
+footer .left .d3 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+}
+
+footer .center .d1 {
+    font-size: 3vw;
+}
+
+footer .center .d1 {
+    font-size: 3vw;
+}
+
+footer .right .d3 {
+    margin: auto;
+    margin-top: -1vw;
+    padding: 0.4vw;
+    background-color: rgb(44, 44, 44);
+    color: beige;
+    width: 8vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+footer .right .d3:hover {
+    color: rgb(44, 44, 44);
+    background-color: beige;
+    transition: 0.2s;
+}
+
+@media (max-width:900px) {
+    footer {
+        grid-template-columns: auto;
+    }
+
+    footer .left {
+        background-color: rgb(62, 61, 61);
+        padding-bottom: 1vw;
+    }
+
+    footer .center {
+        background-color: rgb(62, 61, 61);
+        margin-top: 0.2vw;
+    }
+
+    footer .right {
+        background-color: rgb(62, 61, 61);
+        margin-top: 0.1vw;
+    }
+
+    footer .d1 {
+        font-size: 3.3vw;
+        margin: 2vw 0px;
+    }
+
+    footer .d2 {
+        padding: 0px 5vw;
+        font-size: 2.1vw;
+        margin: 2vw 3vw;
+    }
+
+
+    footer .left .d3 {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 2.5vw;
+    }
+
+    footer .center .d1 {
+        font-size: 3vw;
+    }
+
+    footer .center .d1 {
+        font-size: 3vw;
+    }
+
+    footer .right .d3 {
+        margin-bottom: 2vw;
+        background-color: rgb(44, 44, 44);
+        color: beige;
+        width: 15vw;
+        font-size: 2.2vw;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,9 @@
+{
+  "student": [
+    { "id": 1, "firstName": "Vishwas", "lastName": "Gour" },
+    { "id": 2, "firstName": "Vishwas", "lastName": "Gour" },
+    { "id": 3, "firstName": "Vishwas", "lastName": "Gour" },
+    { "id": 4, "firstName": "Vishwas", "lastName": "Gour" },
+    { "id": 5, "firstName": "Vishwas", "lastName": "Gour" }
+  ]
+}

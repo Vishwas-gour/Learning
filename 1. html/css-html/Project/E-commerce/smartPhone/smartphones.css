@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  scrollbar-width: thin;
+  justify-content: center;
+}
+
+img:hover {
+  scale: 1.02;
+  transition: all 0.07s;
+}
+
+a {
+  cursor: pointer;
+  color: black;
+}
+
+nav ul {
+  padding: 1vw;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  background-color: rgb(55, 118, 233);
+}
+nav ul img {
+  height: 3vw;
+}
+@media (max-width: 750px) {
+  nav ul img {
+    height: 7vw;
+  }
+}
+nav ul input {
+  background: #f2fcff;
+  border-radius: 5px;
+  padding: 1.2vw 2.5vw;
+  width: 40vw;
+  height: 45px;
+}
+@media (max-width: 750px) {
+  nav ul input {
+    display: none;
+  }
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+nav ul li a label {
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  nav ul li a label {
+    height: 7vw;
+  }
+}
+@media (max-width: 750px) {
+  nav ul li a {
+    font-size: 3.4vw;
+  }
+}
+
+#best_deals_on_phones {
+  text-align: center;
+}
+#best_deals_on_phones .mobile_best_deals_label {
+  margin: 1vw;
+  font-size: 1.5vw;
+  color: rgb(116, 116, 116);
+}
+#best_deals_on_phones .item {
+  margin: 1vw;
+  font-size: 1.2vw;
+  color: rgb(116, 116, 116);
+}
+#best_deals_on_phones ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+}
+#best_deals_on_phones ul li {
+  margin: 2vw;
+}
+#best_deals_on_phones ul li img {
+  height: 17vw;
+}
+#best_deals_on_phones ul li .name {
+  margin: 0.2vw;
+  font-size: 1.2vw;
+}
+#best_deals_on_phones ul li .price {
+  margin: 0.2vw;
+  font-size: 1.3vw;
+}
+#best_deals_on_phones ul li .offer {
+  margin: 0.2vw;
+  color: rgb(17, 139, 66);
+  font-size: 1.2vw;
+}
+@media (max-width: 900px) {
+  #best_deals_on_phones ul {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #best_deals_on_phones ul li {
+    padding: 3vw;
+    margin: 1.6vw;
+    border: 2px solid rgb(225, 220, 229);
+  }
+  #best_deals_on_phones ul li img {
+    height: 45vw;
+  }
+  #best_deals_on_phones ul li .name {
+    font-size: 2.7vw;
+  }
+  #best_deals_on_phones ul li .price {
+    font-size: 2.5vw;
+  }
+  #best_deals_on_phones ul li .offer {
+    color: rgb(17, 139, 66);
+    font-size: 2.6vw;
+  }
+}
+
+/*# sourceMappingURL=smartphones.css.map */

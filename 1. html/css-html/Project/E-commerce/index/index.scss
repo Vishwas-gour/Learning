@@ -1,0 +1,326 @@
+@import '_index.scss';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    scrollbar-width: thin;
+    justify-content: center;
+    // border: 0.2px solid black;
+}
+
+img:hover {
+    scale: 1.02;
+    transition: all 0.07s;
+}
+ 
+a{
+    text-decoration: none;
+}
+
+// <!-- <<<<<<<<<<<- NAV-BAR ->>>>>>>>>>>>>>-->
+nav {
+    ul {
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        margin: 1vw 2vw 1vw -1.4vw;
+
+
+        input {
+            background: #f2fcff;
+            border-radius: 10px;
+            padding: 1.2vw 2.5vw;
+            width: 40vw;
+            height: 45px;
+        }
+
+        @media (max-width:750px) {
+            input {
+                display: none;
+            }
+
+        }
+
+        li {
+
+            a {
+                font-size: 1.2vw;
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                label {
+                    cursor: pointer;
+                }
+            }
+            
+            @media (max-width:750px) {
+                a {
+                    font-size: 2vw;
+                }
+        }
+        }
+
+    }
+}
+
+// <!-- <<<<<<<<<<<- TYPE ->>>>>>>>>>>>>>-->
+#selection {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 1vw;
+    text-align: center;
+    margin: 0px 15vw;
+
+    img {
+        height: 6vw;
+        margin: 10px;
+    }
+
+    @media (max-width:1000px) {
+        img {
+            height: 60px;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+
+    #selection {
+        overflow-x: scroll;
+    }
+}
+
+//  <!-- <<<<<<<<<<<-SLIDING->>>>>>>>>>>>>>-->
+#slide {
+    // margin: 1vw 0px;
+    overflow-x: hidden;
+    width: 100%;
+
+    article {
+        animation: slide 20s infinite linear;
+        display: flex;
+        width: 500vw;
+         
+        div img {
+            width: 100vw;
+        }
+    }
+
+
+    @keyframes slide {
+        0% {
+            margin-left: 0%;
+        }
+
+        20% {
+            margin-left: 0%;
+        }
+
+        21% {
+            margin-left: -100vw;
+        }
+
+        40% {
+            margin-left: -100vw;
+        }
+
+        41% {
+            margin-left: -200vw;
+        }
+
+        60% {
+            margin-left: -200vw;
+        }
+
+        61% {
+            margin-left: -300vw;
+        }
+
+        80% {
+            margin-left: -300vw;
+        }
+
+        81% {
+            margin-left: -400vw;
+        }
+
+        100% {
+            margin-left: -400vw;
+        }
+    }
+}
+
+// <!-- <<<<<<<<<<<- DEALS ->>>>>>>>>>>>>>--> 
+#Deals {
+    border: 1px solid rgb(228, 228, 228);
+    margin: 1vw;
+
+    .Deals_label {
+        font-weight: 900;
+        font-size: 1.9vw;
+        color: rgb(67, 67, 67);
+    }
+
+    @media (max-width:600px) {
+        .Deals_label {
+            text-align: center;
+            font-size: 5vw;
+        }
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: space-around;
+
+        li {
+
+            align-items: center;
+            border: 1px solid rgb(205, 205, 205);
+            padding: 1vw;
+            margin: 1vw;
+
+            img {
+                height: 15vw;
+            }
+
+            @media (max-width:600px) {
+                img {
+                    height: 25vw;
+                }
+            }
+
+
+            .name {
+                font-size: 1.4vw;
+                color: rgb(17, 139, 66);
+            }
+
+            .price {
+                font-size: 1.7vw;
+                color: rgb(82, 82, 82);
+            }
+
+            @media (max-width:900px) {
+                .name {
+                    font-size: 2.5vw;
+                }
+
+                .price {
+                    font-size: 2.2vw;
+                }
+            }
+
+            @media (max-width:600px) {
+                .name {
+                    font-size: 3vw;
+                }
+
+                .price {
+                    font-size: 2vw;
+                }
+            }
+
+        }
+    }
+
+    @media (max-width:600px) {
+        ul {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+    }
+}
+
+#three_section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+
+    .section {
+        background-color: rgb(251, 251, 251);
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        border: 1px solid rgb(205, 205, 205);
+
+        img {
+            margin: 0.7vw;
+            height: 16.6vw;
+        }
+
+        @media (max-width:900px) {
+            img {
+                height: 23vw;
+            }
+        }
+
+        .name {
+            font-size: 1.4vw;
+            color: rgb(17, 139, 66);
+        }
+
+        .price {
+            font-size: 1.7vw;
+            color: rgb(82, 82, 82);
+        }
+
+        .left {
+            border: 1px solid rgb(238, 238, 238);
+            padding: 0.5vw;
+            text-align: center;
+            justify-content: center;
+
+            label {
+                font-weight: 900;
+                font-size: 2.2vw;
+                color: rgb(67, 67, 67);
+            }
+
+            @media (max-width:900px) {
+                label {
+                    font-size: 6vw;
+                }
+            }
+        }
+
+        .right {
+            border: 1px solid rgb(205, 205, 205);
+            padding: 0.5vw;
+            justify-content: center;
+
+
+            .top {
+                border-bottom: 2px solid rgb(205, 205, 205);
+            }
+
+            @media (max-width:900px) {
+                .top {
+                    border-bottom: 0px solid rgb(205, 205, 205);
+                }
+            }
+
+        }
+
+        @media (max-width:900px) {
+            .right {
+                display: grid;
+                grid-template-columns: auto auto;
+
+                img {
+
+                    height: 30vw;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:900px) {
+    #three_section {
+        grid-template-columns: auto;
+    }
+}

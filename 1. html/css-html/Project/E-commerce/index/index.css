@@ -1,0 +1,256 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  scrollbar-width: thin;
+  justify-content: center;
+}
+
+img:hover {
+  scale: 1.02;
+  transition: all 0.07s;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  margin: 1vw 2vw 1vw -1.4vw;
+}
+nav ul input {
+  background: #f2fcff;
+  border-radius: 10px;
+  padding: 1.2vw 2.5vw;
+  width: 40vw;
+  height: 45px;
+}
+@media (max-width: 750px) {
+  nav ul input {
+    display: none;
+  }
+}
+nav ul li a {
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+nav ul li a label {
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  nav ul li a {
+    font-size: 2vw;
+  }
+}
+
+#selection {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 1vw;
+  text-align: center;
+  margin: 0px 15vw;
+}
+#selection img {
+  height: 6vw;
+  margin: 10px;
+}
+@media (max-width: 1000px) {
+  #selection img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #selection {
+    overflow-x: scroll;
+  }
+}
+#slide {
+  overflow-x: hidden;
+  width: 100%;
+}
+#slide article {
+  animation: slide 20s infinite linear;
+  display: flex;
+  width: 500vw;
+}
+#slide article div img {
+  width: 100vw;
+}
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+  21% {
+    margin-left: -100vw;
+  }
+  40% {
+    margin-left: -100vw;
+  }
+  41% {
+    margin-left: -200vw;
+  }
+  60% {
+    margin-left: -200vw;
+  }
+  61% {
+    margin-left: -300vw;
+  }
+  80% {
+    margin-left: -300vw;
+  }
+  81% {
+    margin-left: -400vw;
+  }
+  100% {
+    margin-left: -400vw;
+  }
+}
+
+#Deals {
+  border: 1px solid rgb(228, 228, 228);
+  margin: 1vw;
+}
+#Deals .Deals_label {
+  font-weight: 900;
+  font-size: 1.9vw;
+  color: rgb(67, 67, 67);
+}
+@media (max-width: 600px) {
+  #Deals .Deals_label {
+    text-align: center;
+    font-size: 5vw;
+  }
+}
+#Deals ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: space-around;
+}
+#Deals ul li {
+  align-items: center;
+  border: 1px solid rgb(205, 205, 205);
+  padding: 1vw;
+  margin: 1vw;
+}
+#Deals ul li img {
+  height: 15vw;
+}
+@media (max-width: 600px) {
+  #Deals ul li img {
+    height: 25vw;
+  }
+}
+#Deals ul li .name {
+  font-size: 1.4vw;
+  color: rgb(17, 139, 66);
+}
+#Deals ul li .price {
+  font-size: 1.7vw;
+  color: rgb(82, 82, 82);
+}
+@media (max-width: 900px) {
+  #Deals ul li .name {
+    font-size: 2.5vw;
+  }
+  #Deals ul li .price {
+    font-size: 2.2vw;
+  }
+}
+@media (max-width: 600px) {
+  #Deals ul li .name {
+    font-size: 3vw;
+  }
+  #Deals ul li .price {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  #Deals ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+#three_section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+#three_section .section {
+  background-color: rgb(251, 251, 251);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  border: 1px solid rgb(205, 205, 205);
+}
+#three_section .section img {
+  margin: 0.7vw;
+  height: 16.6vw;
+}
+@media (max-width: 900px) {
+  #three_section .section img {
+    height: 23vw;
+  }
+}
+#three_section .section .name {
+  font-size: 1.4vw;
+  color: rgb(17, 139, 66);
+}
+#three_section .section .price {
+  font-size: 1.7vw;
+  color: rgb(82, 82, 82);
+}
+#three_section .section .left {
+  border: 1px solid rgb(238, 238, 238);
+  padding: 0.5vw;
+  text-align: center;
+  justify-content: center;
+}
+#three_section .section .left label {
+  font-weight: 900;
+  font-size: 2.2vw;
+  color: rgb(67, 67, 67);
+}
+@media (max-width: 900px) {
+  #three_section .section .left label {
+    font-size: 6vw;
+  }
+}
+#three_section .section .right {
+  border: 1px solid rgb(205, 205, 205);
+  padding: 0.5vw;
+  justify-content: center;
+}
+#three_section .section .right .top {
+  border-bottom: 2px solid rgb(205, 205, 205);
+}
+@media (max-width: 900px) {
+  #three_section .section .right .top {
+    border-bottom: 0px solid rgb(205, 205, 205);
+  }
+}
+@media (max-width: 900px) {
+  #three_section .section .right {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #three_section .section .right img {
+    height: 30vw;
+  }
+}
+
+@media (max-width: 900px) {
+  #three_section {
+    grid-template-columns: auto;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

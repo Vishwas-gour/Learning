@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+UL {
+  list-style-type: none;
+}
+
+nav ul {
+  padding: 1vw;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  background-color: rgb(55, 118, 233);
+}
+nav ul img {
+  height: 3vw;
+}
+@media (max-width: 750px) {
+  nav ul img {
+    height: 7vw;
+  }
+}
+nav ul input {
+  background: #f2fcff;
+  border-radius: 5px;
+  padding: 1.2vw 2.5vw;
+  width: 40vw;
+  height: 45px;
+}
+@media (max-width: 750px) {
+  nav ul input {
+    display: none;
+  }
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+nav ul li a label {
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  nav ul li a label {
+    height: 7vw;
+  }
+}
+@media (max-width: 750px) {
+  nav ul li a {
+    font-size: 3.4vw;
+  }
+}
+
+.box {
+  justify-content: center;
+}
+.box .loginPage {
+  margin: auto;
+  margin-top: 1vw;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+.box .loginPage .left {
+  padding: 2vw;
+  background-color: rgb(53, 111, 228);
+  color: antiquewhite;
+}
+.box .loginPage .left .login {
+  font-size: 3vw;
+  margin-bottom: 2vw;
+}
+.box .loginPage .left .get {
+  font-size: 2vw;
+  margin-bottom: 8vw;
+}
+.box .loginPage .left .img img {
+  height: 16vw;
+}
+@media (max-width: 900px) {
+  .box .loginPage .left {
+    height: 40vw;
+    width: 40vw;
+    padding: 2vw;
+    background-color: rgb(53, 111, 228);
+    color: antiquewhite;
+  }
+  .box .loginPage .left .login {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
+  .box .loginPage .left .get {
+    font-size: 2vw;
+    margin-bottom: 8vw;
+  }
+  .box .loginPage .left .img img {
+    height: 23vw;
+  }
+}
+.box .loginPage .right {
+  align-items: center;
+}
+.box .loginPage .right .otp {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  padding: 5vw 5vw 0vw 2vw;
+}
+.box .loginPage .right .otp .digit {
+  margin: 1vw;
+  text-align: center;
+  height: 2.5vw;
+  width: 2.5vw;
+  border: 1px solid black;
+}
+.box .loginPage .right form {
+  padding: 1vw 5vw 5vw 2vw;
+}
+.box .loginPage .right form label {
+  font-size: 1.2vw;
+}
+@media (max-width: 900px) {
+  .box .loginPage .right form label {
+    font-size: 2.2vw;
+  }
+}
+.box .loginPage .right form .submit {
+  margin-top: 0.5vw;
+  height: 2.5vw;
+  width: 30vw;
+  font-weight: 500;
+  background-color: #2874F0;
+  font-size: 1.2vw;
+  color: white;
+}
+@media (max-width: 900px) {
+  .box .loginPage .right form .submit {
+    height: 4vw;
+    width: 40vw;
+    font-size: 1.7vw;
+  }
+}
+@media (max-width: 900px) {
+  .box .loginPage {
+    grid-template-columns: auto;
+  }
+}
+
+/*# sourceMappingURL=otp.css.map */

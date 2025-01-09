@@ -1,0 +1,995 @@
+/* import  font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* >>>>>>>>>>>>>>>>> (Univeral) <<<<<<<<<<<<<<<<<<<<< */
+* {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    /* border: blue solid 0.1px; */
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+img:hover {
+    scale: 1.02;
+    transition: scale 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+/* >>>>>>>>>>>>>>>>> (/Univeral) <<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>> NAVBAR  <<<<<<<<<<<<<<< */
+.nav1 {
+    height: 100%;
+    text-align: center;
+    top: 0px;
+    overflow: hidden;
+}
+
+.nav1 .vid video {
+    width: 99vw;
+
+}
+
+.nav1 .logo {
+    font-size: 4vw;
+    position: absolute;
+    top: 1vw;
+    left: 2vw;
+    color: rgb(41, 40, 40);
+}
+
+@media (max-width:900px) {
+    .nav1 .logo {
+        font-size: 6vw;
+    }
+}
+
+.nav1 .nav2 {
+    position: fixed;
+    top: 5px;
+    z-index: 10;
+    right: 0px;
+    height: 10px;
+}
+
+.nav1 .nav2 ul {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav1 .nav2 ul ul {
+    display: block;
+}
+
+.nav1 .nav2 ul ul li a {
+    font-size: 0px;
+
+}
+
+
+/*<<<<<<<<<<<<<<<< CURSOR POINTER >>>>>>>>>>>  */
+
+.nav1 .nav2 ul label {
+    cursor: pointer;
+}
+
+/* --------------------------------------------- */
+.nav1 .nav2 ul li {
+    margin-top: 2vw;
+    opacity: 1;
+    height: 1.7vw;
+    margin-left: 1vw;
+    width: 7vw;
+    opacity: 0.8;
+}
+
+.nav1 .nav2 ul ul li {
+    position: relative;
+    margin: 0.6vw 0px;
+    width: 6vw;
+    opacity: 1;
+}
+
+.nav1 .nav2 ul li label {
+    padding: 0.2vw 0.7vw;
+    font-size: 1.1vw;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.nav1 .nav2 ul ul li a {
+    background-color: #000000;
+    padding: 0px;
+    font-size: 0px;
+    color: rgb(255, 255, 255);
+
+}
+
+/*<<<<<<<<<<<<<<<< NAVBAR HOVER >>>>>>>>>>>  */
+.nav1 .nav2 ul li :hover {
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.1vw;
+    transition: 0.3s;
+    border-radius: 20%;
+}
+
+.nav1 .nav2 ul ul li :hover {
+    font-weight: 0;
+    font-size: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+
+
+
+
+/*<<<<<<<<<SLIDE DIV <<<<<<<< SLIDE DIV >>>>>>>SLIDE DIV >>>>>>>>> */
+
+
+/* for hiding text without check */
+.nav1 #home,
+#pagediv,
+#aboutdiv,
+#portfoliodiv,
+#blogdiv,
+#contactdiv {
+    font-size: 0px;
+}
+
+/* <<<<<<<<<<<<<<< HOME DIV >>>>>>>>>>>>>>>>>> */
+.nav1 #homediv {
+    position: absolute;
+    left: 1.6vw;
+    height: 0vw;
+    width: 6vw;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.75;
+    border-radius: 0.4vw;
+    top: 4vw;
+    font-size: 0vw;
+
+}
+
+#home:checked~#homediv {
+    transition: 0.3s;
+    font-size: 1vw;
+    color: #ffffff;
+    top: 4vw;
+    height: 9vw;
+    transition: 0.3s;
+}
+
+#home:checked~#homediv li a {
+    font-size: 1vw;
+    transition: 0.3s;
+}
+
+/* <<<<<<<<<<<<<<< PAGES DIV >>>>>>>>>>>>>>>>>> */
+.nav1 #pagediv {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 9.6vw;
+    height: 0vw;
+    width: 6vw;
+    border-radius: 0.4vw;
+    opacity: 0.7;
+    top: 4vw;
+
+}
+
+
+#page:checked~#pagediv {
+    font-size: 1vw;
+    top: 4vw;
+    height: 13.4vw;
+    transition: 0.3s;
+}
+
+#page:checked~#pagediv li a {
+    font-size: 1vw;
+    transition: 0.3s;
+}
+
+/* <<<<<<<<<<<<<<< ABOUT DIV >>>>>>>>>>>>>>>>>> */
+.nav1 #aboutdiv {
+    position: absolute;
+    left: 17.6vw;
+    height: 0vw;
+    width: 6vw;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    border-radius: 0.4vw;
+    top: 4vw;
+}
+
+#about:checked~#aboutdiv {
+    font-size: 1vw;
+    top: 4vw;
+    transition: 0.3s;
+    height: 9vw;
+}
+
+#about:checked~#aboutdiv li a {
+    font-size: 1vw;
+    transition: 0.3s;
+}
+
+
+
+/* <<<<<<<<<<<<<<< PORTFOLIO DIV >>>>>>>>>>>>>>>>>> */
+.nav1 #portfoliodiv {
+    position: absolute;
+    left: 25.7vw;
+    height: 0vw;
+    width: 6vw;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    border-radius: 0.4vw;
+    top: 4vw;
+}
+
+#portfolio:checked~#portfoliodiv {
+    height: 9vw;
+    top: 4vw;
+    transition: 0.3s;
+    font-size: 1vw;
+}
+
+#portfolio:checked~#portfoliodiv li a {
+    font-size: 1vw;
+    transition: 0.3s;
+}
+
+
+
+/* <<<<<<<<<<<<<<< BLOG DIV >>>>>>>>>>>>>>>>>> */
+.nav1 #blogdiv {
+    position: absolute;
+    left: 33.8vw;
+    height: 0vw;
+    width: 6vw;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    border-radius: 0.4vw;
+    top: 4vw;
+}
+
+#blog:checked~#blogdiv {
+    height: 9vw;
+    font-size: 1vw;
+    top: 4vw;
+    transition: 0.3s;
+}
+
+#blog:checked~#blogdiv li a {
+    font-size: 1vw;
+    transition: 0.3s;
+}
+
+
+
+
+/* <<<<<<<<<<<<<<< CONTACT DIV >>>>>>>>>>>>>>>>>> */
+.nav1 #contactdiv {
+    left: 41.7vw;
+    position: absolute;
+    height: 0vw;
+    width: 6vw;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    border-radius: 0.4vw;
+    top: 4vw;
+}
+
+#contact:checked~#contactdiv {
+    height: 9vw;
+    font-size: 1vw;
+    transition: 0.3s;
+}
+
+#contact:checked~#contactdiv li a {
+    font-size: 1vw;
+    transition: 0.3s;
+}
+
+
+/*----------- END OF CHECKED -----------*/
+
+.nav1 .caption {
+    position: absolute;
+    top: 30vw;
+    left: 24vw;
+    font-size: 6.4vw;
+    color: rgb(255, 255, 255);
+
+    z-index: 10;
+}
+
+.nav1 .sub_caption {
+    position: absolute;
+    left: 32vw;
+    top: 36.8vw;
+    color: rgb(255, 207, 207);
+    font-size: 1.5vw;
+    z-index: 10;
+}
+
+/* <<<<<<<<<<<<<<< MOBILE-VIEW-NAV >>>>>>>>>>>>>>> */
+#mobileNav {
+    width: 100vw;
+    position: fixed;
+    display: none;
+    font-size: 20px;
+    color: #fffafa;
+
+    align-items: center;
+
+}
+
+#mobileNav div {
+    margin: 0px 2vw;
+
+}
+
+#mobileNav .right {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:900px) {
+    .nav1 .nav2 {
+        display: none;
+    }
+
+    #mobileNav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav1 .logo {
+        display: none;
+    }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>> HERO-1 <<<<<<<<<<<<<<<<<<<< */
+#hero1 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(37, 37, 37);
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+#hero1 .article1 {
+    padding: 0px 8vw;
+    align-content: center;
+    text-align: center;
+}
+
+#hero1 .article1 .p1 {
+    font-size: 3.2vw;
+    padding: 0px 7vw;
+}
+
+#hero1 .article1 .p2 {
+    padding: 2vw 5vw;
+    font-size: 1.6vw;
+}
+
+#hero1 .article2 {
+    padding: 2vw 5vw;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5vw;
+
+}
+
+@media (max-width:900px) {
+    #hero1 {
+        display: block;
+    }
+
+    #hero1 .article1 .p1 {
+        margin: 3vw;
+        font-size: 8vw;
+    }
+
+    #hero1 .article1 .p2 {
+        padding: 2vw 15vw;
+        font-size: 3.5vw;
+    }
+
+    #hero1 .article2 {
+        margin: 5vw 2vw;
+        align-items: center;
+        justify-content: center;
+        padding: 2vw 15vw;
+        font-size: 3vw;
+    }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>> HERO-2  <<<<<<<<<<<<<<<<<<<< */
+
+#hero2 {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+
+}
+
+
+#hero2 .girl {
+    background-image: url("https://demo.flothemes.com/pronto/files/2021/05/pexels-cottonbro-7289125-768x1152.jpg");
+    background-size:auto;
+    background-size:cover ;
+    align-content: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#hero2 .girl .my {
+    font-size: 1.5vw;
+}
+
+#hero2 .girl .content {
+    position: relative;
+    top: 8vw;
+    font-size: 2.5vw;
+}
+
+#hero2 .girl .hr {
+    position: relative;
+    top: 11vw;
+    height: 0.01vw;
+    background-color: aliceblue;
+}
+
+#hero2 .girl .since {
+    position: relative;
+    top: 13vw;
+    font-size: 1.3vw;
+}
+
+#hero2 .boy {
+    font-size: 1.3vw;
+    text-align: center;
+    align-content: center;
+}
+
+#hero2 .boy .boy_img img {
+    height: 30vw;
+    margin: 1.7vw 4vw;
+}
+
+#hero2 .object {
+    font-size: 1.3vw;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+
+}
+
+#hero2 .object .object_img img {
+    height: 25vw;
+    margin: 1.7vw 0vw;
+
+}
+
+@media (max-width:900px) {
+    #hero2 {
+        grid-template-columns: auto;
+        justify-content: center;
+      
+    }
+
+    #hero2 .girl {
+       height: 70vh; 
+    }
+
+    #hero2 .girl .my {
+        position: relative;
+        font-size: 4vw;
+    }
+
+    #hero2 .girl .content {
+        position: relative;
+        top: 8vw;
+        font-size: 7vw;
+    }
+
+    #hero2 .girl .hr {
+        position: relative;
+        top: 11vw;
+        height: 0.01vw;
+        background-color: aliceblue;
+    }
+
+    #hero2 .girl .since {
+        font-size: 3vw;
+        position: relative;
+        top: 13vw;
+    }
+
+   
+
+    #hero2 .boy {
+        font-size: 3vw;
+        text-align: center;
+        align-content: center;
+    }
+
+    #hero2 .boy .boy_img img {
+        height: 80vw;
+        margin: 1.7vw 4vw;
+    }
+
+    #hero2 .object {
+        font-size: 3vw;
+        text-align: center;
+        align-content: center;
+        overflow: hidden;
+
+    }
+
+    #hero2 .object .object_img img {
+        height: 60vw;
+        margin: 1.7vw 0vw;
+
+    }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>> HERO-3 <<<<<<<<<<<<<<<<<<<<<< */
+
+#hero3 {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow: hidden;
+}
+
+#hero3 .content .d1 {
+    margin: 1vw;
+    font-size: 6.4vw;
+}
+
+#hero3 .content .d2 {
+    margin: 1vw;
+    font-size: 1.3vw;
+}
+
+#hero3 .content .d3 {
+    margin: 3vw 1vw;
+    font-size: 2.5vw;
+}
+
+#hero3 .content .d4 {
+    margin: 3vw;
+    font-size: 1.5vw;
+}
+
+#hero3 .content .d5 {
+    margin: 1vw;
+    font-size: 1.3vw;
+}
+
+#hero3 #hero3_img img {
+
+    height: 50vw;
+}
+
+@media (max-width:900px) {
+
+    #hero3 {
+
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    #hero3 .content .d1 {
+        font-size: 8.4vw;
+    }
+
+    #hero3 .content .d2 {
+        padding: 0px 21vw;
+        font-size: 5.3vw;
+    }
+
+    #hero3 .content .d3 {
+        font-size: 4vw;
+        padding: 0px 13vw;
+    }
+
+    #hero3 .content .d4 {
+        margin: 3vw;
+        padding: 0px 19vw;
+        font-size: 3vw;
+    }
+
+    #hero3 .content .d5 {
+        margin: 1vw;
+        font-size: 2.3vw;
+    }
+
+    #hero3 #hero3_img img {
+        margin: 2vw;
+        height: 80vw;
+    }
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>> HERO-4 <<<<<<<<<<<<<<<<<<<<<< */
+#hero4 {
+    height: 40vw;
+    text-align: center;
+}
+
+#hero4 .d1 {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.6vw;
+}
+
+#hero4 .d2 {
+    background-color: beige;
+    font-size: 3.4vw;
+}
+
+@media (max-width:900px) {
+    #hero4 {
+        text-align: center;
+    }
+
+    #hero4 .d1 {
+        background-color: rgb(255, 255, 255);
+        font-size: 3.1vw;
+    }
+
+    #hero4 .d2 {
+        background-color: beige;
+        font-size: 5.4vw;
+    }
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>> HERO-5 <<<<<<<<<<<<<<<<<<<<<< */
+#hero5 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#hero5 .left .img img {
+    height: 37vw;
+}
+
+#hero5 .d1 {
+    font-size: 1.2vw;
+    margin: 1.2vw;
+}
+
+#hero5 .d2 {
+    font-size: 1.7vw;
+    margin: 1.2vw;
+    padding: 0px 4.8vw;
+}
+
+
+#hero5 .center .img1 img {
+    height: 20vw;
+    margin: 1.2vw;
+}
+
+#hero5 .center .img2 img {
+    height: 20vw;
+    margin: 1.2vw;
+}
+
+#hero5 .right {
+    margin: 2.6vw
+}
+
+#hero5 .right .img img {
+    position: relative;
+    height: 40vw;
+}
+
+@media (max-width:900px) {
+    #hero5 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    #hero5 .left {
+
+        align-items: center;
+    }
+
+    #hero5 .left .img img {
+        height: 70vw;
+    }
+
+    #hero5 .d1 {
+        font-size: 5.2vw;
+        margin: 1.2vw;
+    }
+
+    #hero5 .d2 {
+        font-size: 2.7vw;
+        margin: 1.2vw;
+        padding: 0px 4.8vw;
+    }
+
+
+
+    #hero5 .center .img1 img {
+        height: 50vw;
+        margin: 1.2vw;
+    }
+
+    #hero5 .center .img2 img {
+        height: 50vw;
+        margin: 1.2vw;
+    }
+
+    #hero5 .right {
+        margin: 2.6vw
+    }
+
+    #hero5 .right .img img {
+        height: 80vw;
+    }
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>> HERO-6 <<<<<<<<<<<<<<<<<<<<<< */
+
+
+#hero6 {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+
+#hero6 .img {
+    background-image: url(https://demo.flothemes.com/pronto/files/2021/05/pexels-cottonbro-7305187.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hero6 .img .d1 {
+    padding: 0px 6vw;
+
+    /* top: 40vw; */
+    margin: 0px 5vw;
+    font-size: 2.3vw;
+}
+
+
+
+#hero6 .content .d1 {
+    padding: 2vw;
+    margin: 3vw 3vw 7vw 3vw;
+    font-size: 2.7vw;
+    text-align: left;
+}
+
+#hero6 .content .d2 {
+    padding: 1vw 6vw 10vw;
+    font-size: 1.7vw;
+    text-align: left;
+
+}
+
+#hero6 .content .d3 {
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+}
+
+@media (max-width:900px) {
+
+    #hero6 {
+        grid-template-columns: auto;
+    }
+
+
+    #hero6 .img {
+        height: 50vw;
+    }
+
+    #hero6 .img .d1 {
+        position: relative;
+        top: 40vw;
+        margin: 0px 5vw;
+        font-size: 3vw;
+    }
+
+
+
+    #hero6 .content .d1 {
+        padding: 0vw 9vw;
+        margin: 3vw 3vw 7vw 3vw;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #hero6 .content .d2 {
+        padding: 1vw 10vw;
+        font-size: 2.7vw;
+        text-align: center;
+
+    }
+
+    #hero6 .content .d3 {
+        margin: 2vw;
+        font-size: 4vw;
+    }
+
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>> footer <<<<<<<<<<<<<<<<<<<<<< */
+footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: white;
+}
+
+footer .left {
+    background-color: rgb(1, 1, 1);
+    padding-bottom: 1vw;
+}
+
+footer .center {
+    background-color: rgb(1, 1, 1);
+    margin-top: 1px;
+}
+
+footer .right {
+    background-color: rgb(1, 1, 1);
+    margin-top: 1px;
+}
+
+footer .d1 {
+    font-size: 1.3vw;
+    margin: 2vw 0px;
+}
+
+footer .d2 {
+    padding: 0px 5vw;
+    font-size: 1.1vw;
+    margin: 2vw 3vw;
+}
+
+footer .left .facebook:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: rgb(37, 37, 248);
+}
+
+footer .left .twiter:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: rgb(0, 91, 111);
+}
+
+footer .left .pinterest:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: rgb(255, 64, 64);
+
+}
+
+footer .left .d3 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+}
+
+footer .center .d1 {
+    font-size: 3vw;
+}
+
+footer .center .d1 {
+    font-size: 3vw;
+}
+
+footer .right .d3 {
+    margin: auto;
+    margin-top: -1vw;
+    padding: 0.4vw;
+    background-color: rgb(44, 44, 44);
+    color: beige;
+    width: 8vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+footer .right .d3:hover {
+    color: rgb(44, 44, 44);
+    background-color: beige;
+    transition: 0.2s;
+}
+
+@media (max-width:900px) {
+    footer {
+        grid-template-columns: auto;
+    }
+
+    footer .left {
+        background-color: rgb(62, 61, 61);
+        padding-bottom: 1vw;
+    }
+
+    footer .center {
+        background-color: rgb(62, 61, 61);
+        margin-top: 0.2vw;
+    }
+
+    footer .right {
+        background-color:  rgb(62, 61, 61);
+        margin-top: 0.1vw;
+    }
+
+    footer .d1 {
+        font-size: 3.3vw;
+        margin: 2vw 0px;
+    }
+
+    footer .d2 {
+        padding: 0px 5vw;
+        font-size: 2.1vw;
+        margin: 2vw 3vw;
+    }
+
+
+    footer .left .d3 {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 2.5vw;
+    }
+
+    footer .center .d1 {
+        font-size: 3vw;
+    }
+
+    footer .center .d1 {
+        font-size: 3vw;
+    }
+
+    footer .right .d3 {
+        margin-bottom:2vw ;  
+        background-color: rgb(44, 44, 44);
+        color: beige;
+        width: 15vw;
+        font-size: 2.2vw;
+        cursor: pointer;
+    }
+
+}

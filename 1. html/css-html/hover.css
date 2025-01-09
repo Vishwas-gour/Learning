@@ -1,0 +1,18 @@
+
+#hoverr{
+   border-radius: 2%;
+   margin:auto auto auto auto;
+   margin-top: 100px;
+   height: 100px;
+   width: 100px;
+   background-color: rgb(164, 10, 36);
+}
+#hoverr:hover{
+    background-color: rgb(20, 0, 0);
+    scale: 1.21;
+    width:100px; 
+    border-radius: 20% ;
+    margin-top: -1px;
+    transition: width 3s;
+    transition:  2s;
+}
