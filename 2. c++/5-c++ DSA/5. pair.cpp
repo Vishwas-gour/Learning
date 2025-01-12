@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <tuple>
+#include <string>
 using namespace std;
 int main()
 {
@@ -36,14 +37,69 @@ int main()
     // }
     // ========================[tuple]========================
 
-    tuple<int, string, int> t{123, "Vishwas", 987353637}; //=====> one way
-    cout << get<0>(t) << " ";
-    cout << get<1>(t) << " ";
-    cout << get<2>(t) << " ";
-    cout << endl;
+    // tuple<int, string, int> t; //=====> one way
+    // cout << get<0>(t) << " ";
+    // cout << get<1>(t) << " ";
+    // cout << get<2>(t) << " ";
+    // cout << endl;
 
-    t = make_tuple(32, "hema", 78920380); //=====> other way
-    cout << get<0>(t) << " ";
-    cout << get<1>(t) << " ";
-    cout << get<2>(t) << " ";
+    // t = make_tuple(32, "hema", 78920380); //=====> other way
+    // cout << get<0>(t) << " ";
+    // cout << get<1>(t) << " ";
+    // cout << get<2>(t) << " ";
+
+    // ========================[vectore of tuple]========================
+
+    // vector<tuple<int, string, int>> vec;
+    // int record = 3;
+    // int a;
+    // string b;
+    // int c;
+    // for (int i = 0; i < record; i++)
+    // {
+    //     cout << "numb: ";
+    //     cin >> a;
+    //     cout << "name: ";
+    //     cin >> b;
+    //     cout << "numb1 : ";
+    //     cin >> c;
+    //     cout << endl;
+    //     // vec.push_back(make_tuple(a,b,c));
+    //     vec.push_back({a, b, c});
+    // }
+
+    // for (int i = 0; i < record; i++)
+    // {
+    //     cout << get<0>(vec[i]) << " ";
+    //     cout << get<1>(vec[i]) << " ";
+    //     cout << get<2>(vec[i]) << " ";
+    //     cout<<endl;
+    // }
+
+    // ========================[Question]========================
+    string str = "AMAMA";
+    int s = 0;
+    int e = str.size();
+    bool check = true;
+    while ((s < e))
+    {
+        if (str[s] != str[e])
+        {
+            check = false;
+            cout << " not a palindrome";
+            break;
+        }
+    }
+
+    if (check)
+    {
+        cout << "yes it is palindrome";
+    }
+
+    vector<int> v{1, 2, 7, 6, 3, 2};
+    int min = 0;
+    for (int i = 0; i < v.size(); i++)
+    {
+        
+    }
 }

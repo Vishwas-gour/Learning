@@ -15,7 +15,9 @@ function CardComponent() {
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
-            </Card>
+      while (wh) {
+        
+      }      </Card>
 
 
             <Card style={{margin:"1rem", width: '25rem', backgroundColor: "purple", color: "white" }}>

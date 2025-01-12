@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 
 function Navbar() {
   return (
-    <Nav variant="pills" defaultActiveKey="/home" style={{ backgroundColor: "black", padding: "1rem" }}>
+    <Nav variant="pills" defaultActiveKey="/home" style={{ backgroundColor: "white", padding: "1rem" }}>
       <Nav.Item>
         <Nav.Link href="/home">Home</Nav.Link>
       </Nav.Item>
